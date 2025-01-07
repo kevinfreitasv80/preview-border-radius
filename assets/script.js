@@ -11,7 +11,7 @@ input3.addEventListener("input", (e) => changeValueInput(3, e.target.value));
 input4.addEventListener("input", (e) => changeValueInput(4, e.target.value));
 btn.addEventListener("click", () =>
   copyToClipboard(
-    `border-radius: ${input1.value}px ${input3.value}px ${input4.value}px ${input2.value}px`
+    `border-radius: ${input1.value || 0}px ${input3.value || 0}px ${input4.value || 0}px ${input2.value || 0}px`
   )
 );
 
